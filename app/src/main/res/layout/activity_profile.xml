@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/userPicture"
+        android:layout_width="235dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/contentDescription_userProfilePicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/jeremiah_polo_profile_picture" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="@dimen/text_profile_name_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPicture"
+        tools:text="John Doe" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="384dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/textView_track_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_track"
+        android:textSize="@dimen/text_profile_textSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/textView_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="@dimen/text_profile_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_track_label"
+        app:layout_constraintStart_toEndOf="@+id/textView_track_label"
+        tools:text="Android" />
+
+    <TextView
+        android:id="@+id/textView_country_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_country"
+        android:textSize="@dimen/text_profile_textSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_track_label" />
+
+    <TextView
+        android:id="@+id/textView_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="@dimen/text_profile_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_country_label"
+        app:layout_constraintStart_toEndOf="@+id/textView_country_label"
+        tools:text="Kenya" />
+
+    <TextView
+        android:id="@+id/textView_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_email"
+        android:textSize="@dimen/text_profile_textSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_country_label" />
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="@dimen/text_profile_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_email_label"
+        app:layout_constraintStart_toEndOf="@+id/textView_email_label"
+        tools:text="polojerry4@gmail.com" />
+
+    <TextView
+        android:id="@+id/textView_phone_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_phone_number"
+        android:textSize="@dimen/text_profile_textSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email_label" />
+
+    <TextView
+        android:id="@+id/textView_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="@dimen/text_profile_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_phone_number_label"
+        app:layout_constraintStart_toEndOf="@+id/textView_phone_number_label"
+        tools:text="254790689212" />
+
+    <TextView
+        android:id="@+id/textView_slack_username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_slack_username"
+        android:textSize="@dimen/text_profile_textSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_phone_number_label" />
+
+    <TextView
+        android:id="@+id/textView_slack_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="@dimen/text_profile_textSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_slack_username_label"
+        app:layout_constraintStart_toEndOf="@+id/textView_slack_username_label"
+        tools:text="jeremiah_polo" />
+
+
+</android.support.constraint.ConstraintLayout>
